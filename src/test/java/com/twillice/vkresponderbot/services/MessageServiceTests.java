@@ -1,6 +1,6 @@
 package com.twillice.vkresponderbot.services;
 
-import com.twillice.vkresponderbot.VkApiClient;
+import com.twillice.vkresponderbot.restclients.VkApiClient;
 import com.twillice.vkresponderbot.configuration.VkApiProperties;
 import com.twillice.vkresponderbot.events.objects.Message;
 import com.twillice.vkresponderbot.events.objects.NewMessage;

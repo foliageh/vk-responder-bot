@@ -1,4 +1,4 @@
-package com.twillice.vkresponderbot;
+package com.twillice.vkresponderbot.restclients;
 
 import com.twillice.vkresponderbot.configuration.VkApiProperties;
 import lombok.Getter;
