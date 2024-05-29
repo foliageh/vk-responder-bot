@@ -8,6 +8,6 @@ import lombok.Value;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Message {
     @JsonProperty(value = "from_id")
-    Long fromId;
+    Integer fromId;
     String text;
 }

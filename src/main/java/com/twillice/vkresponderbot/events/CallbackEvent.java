@@ -10,5 +10,5 @@ public class CallbackEvent {
     CallbackEventType type;
     Map<String, Object> object;
     @JsonProperty(value = "group_id")
-    Long groupId;
+    Integer groupId;
 }

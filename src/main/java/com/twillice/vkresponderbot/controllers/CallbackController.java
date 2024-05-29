@@ -25,6 +25,11 @@ public class CallbackController {
 
     @PostMapping
     public String handleCallback(@RequestBody CallbackEvent callbackEvent) {
+        if (callbackEvent.getType() == null) {
+            LOG.warn("Received unknown event");
+            return "ok";
+        }
+
         LOG.info("Received {} event", callbackEvent.getType());
         switch (callbackEvent.getType()) {
             case confirmation -> {
@@ -36,7 +41,6 @@ public class CallbackController {
                 messageService.replyNewMessage(newMessage);
                 LOG.info("Replied to message");
             }
-            default -> LOG.warn("Unknown event");
         }
         return "ok";
     }
